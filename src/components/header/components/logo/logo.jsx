@@ -18,7 +18,7 @@ const LogoConteiner = ({ className }) => (
   <Link className={className} to="/">
     <Icon id="fa-code" size="70px" margin="0 10px 0 0" />
     <div>
-      <LargeText>Блок</LargeText>
+      <LargeText>Блог</LargeText>
       <SmallText>веб-разработчика</SmallText>
     </div>
   </Link>
@@ -28,3 +28,5 @@ export const Logo = styled(LogoConteiner)`
   display: flex;
   margin-top: -21px;
 `;
+
+
