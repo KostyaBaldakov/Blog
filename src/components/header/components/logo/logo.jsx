@@ -14,7 +14,7 @@ const SmallText = styled.div`
   font-weight: bold;
 `;
 
-const LogoConteiner = ({ className }) => (
+const LogoContainer = ({ className }) => (
   <Link className={className} to="/">
     <Icon id="fa-code" size="70px" margin="0 10px 0 0" />
     <div>
@@ -24,7 +24,7 @@ const LogoConteiner = ({ className }) => (
   </Link>
 );
 
-export const Logo = styled(LogoConteiner)`
+export const Logo = styled(LogoContainer)`
   display: flex;
   margin-top: -21px;
 `;

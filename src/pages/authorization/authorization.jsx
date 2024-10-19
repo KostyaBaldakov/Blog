@@ -4,8 +4,10 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { server } from "../../bff";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Input, H2, Button } from "../../components";
 import styled from "styled-components";
+import { setUser } from "../../actions";
 
 const authFormSchema = yup.object().shape({
   login: yup
@@ -57,11 +59,16 @@ const AuthorizationContainer = ({ className }) => {
 
   const [serverError, setServerError] = useState(null);
 
+  const dispatch = useDispatch();
+
   const onSubmit = ({ login, password }) => {
     server.authorize(login, password).then(({ res, error }) => {
       if (error) {
         setServerError(`Ошибка запроса: ${error}`);
+        return;
       }
+
+      dispatch(setUser(res));
     });
   };
 
