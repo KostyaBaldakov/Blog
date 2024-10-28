@@ -3,6 +3,10 @@ import { getUser } from "./get-user";
 import { sessions } from "./sessions";
 
 export const server = {
+  async logout(session) {
+    sessions.remove(session);
+  },
+
   async authorize(authLogin, authPassword) {
     const user = await getUser(authLogin);
 
@@ -40,18 +44,6 @@ export const server = {
         res: null,
       };
     }
-
-    // const session = {
-    //   logout() {
-    //     Object.keys(session).forEach((key) => {
-    //       delete session[key];
-    //     });
-    //   },
-
-    //   removeComment() {
-    //     console.log("Удаление комментария");
-    //   },
-    // };
 
     await addUser(regLogin, regPassword);
 
