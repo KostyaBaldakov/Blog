@@ -12,7 +12,7 @@ export const useServerRequest = () => {
         ? params
         : [session, ...params];
 
-      return server[operation](...request);
+      return server?.[operation]?.(...request);
     },
     [session]
   );
