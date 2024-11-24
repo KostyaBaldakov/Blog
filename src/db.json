@@ -8,11 +8,39 @@
       "role_id": 0
     },
     {
-      "id": "a60e",
+      "id": "a60e123",
       "login": "asdasd",
       "password": "asdasd",
       "registed_at": "2049-07-29 16:13",
       "role_id": 1
+    },
+    {
+      "id": "a60e321",
+      "login": "qwe",
+      "password": "asdasd",
+      "registed_at": "2049-07-29 16:13",
+      "role_id": 2
+    },
+    {
+      "id": "a60easd",
+      "login": "zxc",
+      "password": "asdasd",
+      "registed_at": "2049-07-29 16:13",
+      "role_id": 3
+    },
+    {
+      "id": "a60edsa",
+      "login": "ewq",
+      "password": "asdasd",
+      "registed_at": "2049-07-29 16:13",
+      "role_id": 2
+    },
+    {
+      "id": "a60efsa",
+      "login": "dsaqwe",
+      "password": "asdasd",
+      "registed_at": "2049-07-29 16:13",
+      "role_id": 3
     }
   ],
   "roles": [
@@ -98,5 +126,115 @@
       "published_at": "2045-01-07"
     }
   ],
-  "comments": []
+  "comments": [
+    {
+      "id": "d8dc",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2042-04-28 10:17",
+      "content": "asdasd"
+    },
+    {
+      "id": "62a2",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2051-07-29 18:00",
+      "content": "asdasdsad"
+    },
+    {
+      "id": "4ea7",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2038-05-09 01:01",
+      "content": "asdasdsadasdasda"
+    },
+    {
+      "id": "bc9c",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2045-02-20 05:27",
+      "content": "asdasdsadasdasda123"
+    },
+    {
+      "id": "1049",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2049-10-03 05:21",
+      "content": "asdasdsadasdasda123442423"
+    },
+    {
+      "id": "b55c",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2054-09-12 04:46",
+      "content": "asdasdsadasdasda123442423123"
+    },
+    {
+      "id": "9703",
+      "author_id": "001",
+      "post_id": "",
+      "published_at": "2034-12-04 08:50",
+      "content": "asdasdasdasdasdasdasdasdas"
+    },
+    {
+      "id": "a6f0",
+      "author_id": "001",
+      "post_id": "",
+      "published_at": "2044-06-22 23:39",
+      "content": "asdas12312312"
+    },
+    {
+      "id": "64fc",
+      "author_id": "001",
+      "published_at": "2038-11-19 17:45",
+      "content": "asdas12312312ead"
+    },
+    {
+      "id": "e922",
+      "author_id": "001",
+      "post_id": "",
+      "published_at": "2036-06-08 02:33",
+      "content": "123321123"
+    },
+    {
+      "id": "2414",
+      "author_id": "001",
+      "post_id": "",
+      "published_at": "2044-03-19 17:16",
+      "content": "eaqeq"
+    },
+    {
+      "id": "76a8",
+      "author_id": "001",
+      "post_id": "",
+      "published_at": "2049-07-16 02:18",
+      "content": "123534534"
+    },
+    {
+      "id": "3173",
+      "author_id": "001",
+      "published_at": "2050-03-24 16:09",
+      "content": "123534534321321"
+    },
+    {
+      "id": "3577",
+      "author_id": "001",
+      "post_id": "",
+      "published_at": "2056-05-18 23:11",
+      "content": "asdasdhgretwe42"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "3f89",
+      "hash": "0.75437615927105716728817697003250941634178161621094",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwe123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      }
+    }
+  ]
 }

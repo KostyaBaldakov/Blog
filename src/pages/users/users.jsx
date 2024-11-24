@@ -37,7 +37,6 @@ const UsersContainer = ({ className }) => {
 
   return (
     <div className={className}>
-      <>
         <Content error={errorMessage}>
           <H2>Пользователи</H2>
           <div>
@@ -60,7 +59,6 @@ const UsersContainer = ({ className }) => {
             ))}
           </div>
         </Content>
-      </>
     </div>
   );
 };
