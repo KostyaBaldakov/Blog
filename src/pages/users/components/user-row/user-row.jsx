@@ -51,6 +51,7 @@ const UserRowContainer = ({
         </div>
       </TableRow>
       <Icon
+        className="icon"
         id="fa-trash-o"
         margin="0 0 0 10px"
         onClick={onUserRemove}

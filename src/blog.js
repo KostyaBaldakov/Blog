@@ -1,6 +1,6 @@
 import { useLayoutEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Header, Footer } from "./components";
+import { Header, Footer, Modal } from "./components";
 import { Authorization, Registration, Users, Post } from "./pages";
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
@@ -30,7 +30,7 @@ export const Blog = () => {
       return;
     }
 
-    const currentUserData = JSON.parse(currentUserDataJSON)
+    const currentUserData = JSON.parse(currentUserDataJSON);
 
     dispatch(
       setUser({
@@ -55,6 +55,7 @@ export const Blog = () => {
         </Routes>
       </Page>
       <Footer />
+      <Modal />
     </AppColumn>
   );
 };

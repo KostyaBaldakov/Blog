@@ -34,13 +34,6 @@
       "password": "asdasd",
       "registed_at": "2049-07-29 16:13",
       "role_id": 2
-    },
-    {
-      "id": "a60efsa",
-      "login": "dsaqwe",
-      "password": "asdasd",
-      "registed_at": "2049-07-29 16:13",
-      "role_id": 3
     }
   ],
   "roles": [
@@ -163,13 +156,6 @@
       "content": "asdasdsadasdasda123442423"
     },
     {
-      "id": "b55c",
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2054-09-12 04:46",
-      "content": "asdasdsadasdasda123442423123"
-    },
-    {
       "id": "9703",
       "author_id": "001",
       "post_id": "",
@@ -182,12 +168,6 @@
       "post_id": "",
       "published_at": "2044-06-22 23:39",
       "content": "asdas12312312"
-    },
-    {
-      "id": "64fc",
-      "author_id": "001",
-      "published_at": "2038-11-19 17:45",
-      "content": "asdas12312312ead"
     },
     {
       "id": "e922",
@@ -211,23 +191,46 @@
       "content": "123534534"
     },
     {
-      "id": "3173",
-      "author_id": "001",
-      "published_at": "2050-03-24 16:09",
-      "content": "123534534321321"
-    },
-    {
       "id": "3577",
       "author_id": "001",
       "post_id": "",
       "published_at": "2056-05-18 23:11",
       "content": "asdasdhgretwe42"
+    },
+    {
+      "id": "6065",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2042-02-02 08:33",
+      "content": "asdasdasdasda"
     }
   ],
   "sessions": [
     {
       "id": "3f89",
       "hash": "0.75437615927105716728817697003250941634178161621094",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwe123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      }
+    },
+    {
+      "id": "a228",
+      "hash": "0.35499956229562812382027914281934499740600585937500",
+      "user": {
+        "id": "001",
+        "login": "anton",
+        "password": "qwe123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      }
+    },
+    {
+      "id": "67bc",
+      "hash": "0.49485119136296051856049871275899931788444519042969",
       "user": {
         "id": "001",
         "login": "anton",
