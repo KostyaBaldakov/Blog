@@ -78,9 +78,14 @@ export const PostForm = styled(PostFormContainer)`
   }
 
   & .post-text {
+    word-wrap: break-word;
     font-size: 18px;
     white-space: pre-line;
     min-height: 80px;
     border: 1px solid #000;
+    > * {
+      word-break: break-all;
+      overflow: hidden;
+    }
   }
 `;
