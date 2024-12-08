@@ -55,8 +55,14 @@ export const PostCard = styled(PostCardContainer)`
   }
 
   & .post-card-footer {
+    overflow: hidden;
     padding: 5px;
     border-top: 1px solid #000;
+    h3 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
 
   & h4 {
