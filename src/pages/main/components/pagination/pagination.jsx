@@ -11,15 +11,22 @@ const PaginationContainer = ({ className, page, setPage, lastPage }) => {
         Предыдущая
       </Button>
       <div className="current-page">Страница: {page}</div>
-      <Button disabled={page === lastPage} onClick={() => setPage(page + 1)}>Следующая</Button>
-      <Button disabled={page === lastPage} onClick={() => setPage(lastPage)}>В конец</Button>
+      <Button disabled={page === lastPage} onClick={() => setPage(page + 1)}>
+        Следующая
+      </Button>
+      <Button disabled={page === lastPage} onClick={() => setPage(lastPage)}>
+        В конец
+      </Button>
     </div>
   );
 };
 
 export const Pagination = styled(PaginationContainer)`
-display: flex;
+  display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 140px;
+  width: 100%;
   margin: 0 0 20px;
   padding: 0 35px;
 

@@ -32,24 +32,28 @@ const MainContainer = ({ className }) => {
 
   return (
     <div className={className}>
-      <Search searchPhrase={searchPhrase} onChange={onSearch} />
-      {posts.length > 0 ? (
-        <div className="post-list">
-          {posts.map(({ id, title, imageUrl, publishedAt, commentsCount }) => (
-            <PostCard
-              key={id}
-              id={id}
-              title={title}
-              imageUrl={imageUrl}
-              publishedAt={publishedAt}
-              commentsCount={commentsCount}
-            />
-          ))}
-        </div>
-      ) : (
-        <div className="no-posts-found">Статьи не найдены</div>
-      )}
-      {lastPage > 1 && (
+      <div className="posts-and-search">
+        <Search searchPhrase={searchPhrase} onChange={onSearch} />
+        {posts.length > 0 ? (
+          <div className="post-list">
+            {posts.map(
+              ({ id, title, imageUrl, publishedAt, commentsCount }) => (
+                <PostCard
+                  key={id}
+                  id={id}
+                  title={title}
+                  imageUrl={imageUrl}
+                  publishedAt={publishedAt}
+                  commentsCount={commentsCount}
+                />
+              )
+            )}
+          </div>
+        ) : (
+          <div className="no-posts-found">Статьи не найдены</div>
+        )}
+      </div>
+      {lastPage > 1 && posts.length > 0 && (
         <Pagination page={page} setPage={setPage} lastPage={lastPage} />
       )}
     </div>
@@ -57,10 +61,14 @@ const MainContainer = ({ className }) => {
 };
 
 export const Main = styled(MainContainer)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   & .post-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px 20px 80px;
   }
 
   & .no-posts-found {
