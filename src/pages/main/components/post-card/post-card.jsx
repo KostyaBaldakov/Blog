@@ -10,6 +10,7 @@ const PostCardContainer = ({
   publishedAt,
   commentsCount,
 }) => {
+
   return (
     <div className={className}>
       <Link to={`/post/${id}`}>
