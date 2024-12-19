@@ -1,12 +1,14 @@
-import styled from "styled-components";
 import { Icon } from "../../../../../../components";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   CLOSE_MODAL,
   openModal,
   removeCommentAsync,
 } from "../../../../../../actions";
 import { useServerRequest } from "../../../../../../hooks";
+import { selectUserRole } from "../../../../../../selectors";
+import { ROLE } from "../../../../../../constants";
+import styled from "styled-components";
 
 const CommentContainer = ({
   className,
@@ -18,6 +20,7 @@ const CommentContainer = ({
 }) => {
   const dispatch = useDispatch();
   const requestServer = useServerRequest();
+  const userRole = useSelector(selectUserRole);
 
   const onCommentRemove = (id) => {
     dispatch(
@@ -31,6 +34,8 @@ const CommentContainer = ({
       })
     );
   };
+
+  const isAdminOrModerator = [ROLE.ADMIN, ROLE.MODERATOR].includes(userRole);
 
   return (
     <div className={className}>
@@ -59,12 +64,15 @@ const CommentContainer = ({
         </div>
         <div className="content-text">{content}</div>
       </div>
-      <Icon
-        id="fa-trash-o"
-        size="21px"
-        margin="0 0px 0 10px"
-        onClick={() => onCommentRemove(id)}
-      />
+
+      {isAdminOrModerator && (
+        <Icon
+          id="fa-trash-o"
+          size="21px"
+          margin="0 0px 0 10px"
+          onClick={() => onCommentRemove(id)}
+        />
+      )}
     </div>
   );
 };
