@@ -45,7 +45,7 @@ const UsersContainer = ({ className }) => {
       setShouldUpdateUserList(!shouldUpdateUserList);
     });
   };
-
+  
   return (
     <PrivateContent access={[ROLE.ADMIN]} serverError={errorMessage}>
       <div className={className}>

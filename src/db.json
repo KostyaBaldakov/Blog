@@ -15,13 +15,6 @@
       "role_id": 1
     },
     {
-      "id": "a60e321",
-      "login": "qwe",
-      "password": "asdasd",
-      "registed_at": "2049-07-29 16:13",
-      "role_id": 2
-    },
-    {
       "id": "a60easd",
       "login": "zxc",
       "password": "asdasd",
@@ -33,13 +26,6 @@
       "login": "ewq",
       "password": "asdasd",
       "registed_at": "2049-07-29 16:13",
-      "role_id": 2
-    },
-    {
-      "id": "4f38",
-      "login": "qweqweqwe",
-      "password": "qweqwe",
-      "registed_at": "2049-04-23 14:31",
       "role_id": 2
     }
   ],
@@ -371,6 +357,13 @@
       "published_at": "2054-03-15 06:08",
       "content": "8см",
       "id": "jGwmi-M"
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2056-05-03 20:08",
+      "content": "seryozhaWell",
+      "id": "-7fMqEk"
     }
   ],
   "sessions": [
@@ -560,6 +553,39 @@
         "roleId": 0
       },
       "id": "lqkI4Wv"
+    },
+    {
+      "hash": "0.74197257197829480368511667620623484253883361816406",
+      "user": {
+        "id": "001",
+        "login": "sereja",
+        "password": "qwe123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": "A2dD-fK"
+    },
+    {
+      "hash": "0.25662173526136733414659829577431082725524902343750",
+      "user": {
+        "id": "001",
+        "login": "sereja",
+        "password": "qwe123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": "iSAfZJ0"
+    },
+    {
+      "hash": "0.37582408849250481530646084138425067067146301269531",
+      "user": {
+        "id": "001",
+        "login": "sereja",
+        "password": "qwe123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      },
+      "id": "4A3dk_b"
     }
   ]
 }
